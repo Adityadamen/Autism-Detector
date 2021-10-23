@@ -9,7 +9,7 @@ lock = threading.Lock()
 app = Flask(__name__)
 model = pickle.load(open('modelA.pkl', 'rb'))
 model1 = pickle.load(open('adult.pkl', 'rb'))
-client = pymongo.MongoClient("mongodb+srv://Adityadamen:Aditya04@cluster0.ehmfr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://Aditya04:Aditya04@cluster0.rmhkt.mongodb.net/Autism?retryWrites=true&w=majority")
 
 
 app.config['DEBUG']=True
