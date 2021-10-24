@@ -1,11 +1,8 @@
 from flask import Flask, request, jsonify, render_template
 import pickle
 import numpy as np
-import argparse
-import threading
 import pymongo
 from flask_mail import Mail,Message
-lock = threading.Lock()
 app = Flask(__name__)
 model = pickle.load(open('modelA.pkl', 'rb'))
 model1 = pickle.load(open('adult.pkl', 'rb'))
